@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #fff;
+    color: #333;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+    color:white;
+    font-size: 28px;
+    font-weight:bold;
+}
+.nav-links{
+    display: flex;
+    list-style: none;   
+
+}
+nav-links li{
+margin: left 30px;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: .3s;
+}
+
+nav-links a:hover,
+    .active{
+    color: gold;
+}
+
+.menu-btn{
+    display:none;
+color: white;
+fontsize: 28px;
+cursor: pointer;
+}
+
+.hero{
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),      
+    url(https://media.gettyimages.com/id/1856117770/photo/modern-beauty-salon.jpg?b=1&s=2048x2048&w=0&k=20&c=0VTxfbdVcVVD4H3W6iEMSiW7IrUABzFDPlBDydl32gg=);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.btn{
+    text-decoration: none;
+    color:#fff;
+    background: #ff4d88;
+    padding: 15px 35px;
+    border-radius: 30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background: #ff1f68;
+}
+
+.services{
+    padding: 80px 10%;
+}
+.services h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.service-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    background:white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1); 
+    transition:.4s;
+}
+.card:hover{
+    transform:translateY(-10px)
+}
+.card i{
+    font-size: 50px;
+    color: #ff4d88;
+    margin-bottom: 20px;    
+
+}
+.cardh3{
+    margin-bottom: 15px;
+}
+
+.why-us{
+    background:#ffe8f1;
+    padding: 80px 8%;
+}
+.why-us h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap: 30px;
+    flex-wrap:wrap;
+
+}
+features{
+    background:white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+.features i{
+    
+    font-size: 50px;
+    color: #ff4d88;
+    margin-bottom: 20px;
+}
+
+.testimonials{
+    padding: 80px 8%;
+    text-align: center;
+}
+.testimonial-box{
+    max-width: 700px;
+    margin:auto;
+    background:#fff;
+    padding: 40px;
+    box-shadow:0 0 10px rgba(0,0,0,.1); 
+    border-radius: 10px;
+}
+.testimonials-box p{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    padding: 50px 8%;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.footer-content h3{
+    margin-bottom: 15px;
+}
+.footer-content a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+.footer-content a:hover{
+    color: #ff4d88;
+}
+ hrf{
+    margin:30px 0;
+ }
+ .copyright{
+    text-align: center;
+    margin-top: 30px;
+ }
+
+ @media (max-width:768px){
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    features{
+        flex-direction: column;
+        align-items: center;    
+    }
+
+
+}
